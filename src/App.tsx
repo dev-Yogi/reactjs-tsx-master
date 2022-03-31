@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Employee from '../src/components/Employee';
+
 function App() {
   return (
    <React.Fragment>
@@ -20,6 +22,13 @@ function App() {
              </button>
            </div>
          </div>
+       </div>
+     </div>
+
+     <div className="row">
+       <div className="col">
+         <Employee/>
+
        </div>
      </div>
    </React.Fragment>
