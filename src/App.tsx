@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import Employee from '../src/components/Employee';
+import Customer from './components/Customer';
+import { CustomerClass } from './components/CustomerClass';
 
 function App() {
   return (
@@ -29,6 +31,18 @@ function App() {
        <div className="col">
          <Employee/>
 
+       </div>
+     </div>
+
+     <div className="row">
+       <div className="col">
+         <Customer name={'Vanessa'} age={28} title={"Software Engineer"}/>
+       </div>
+     </div>
+
+     <div className="row">
+       <div className="col">
+         <CustomerClass name={'Vanessa'} age={28} title={"Software Engineer"}/>
        </div>
      </div>
    </React.Fragment>
