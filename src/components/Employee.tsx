@@ -17,7 +17,7 @@ let Employee:React.FC<IProps> = () =>{
 
     return(
         <React.Fragment>
-            <h3>Employee Component</h3>
+            <h3>Employee State Functional Component</h3>
 
             <ul className="list-group">
                 <li className="list-group-item">

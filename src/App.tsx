@@ -5,6 +5,7 @@ import './App.css';
 import Employee from '../src/components/Employee';
 import Customer from './components/Customer';
 import { CustomerClass } from './components/CustomerClass';
+import { EmployeeClass } from './components/EmployeeClass';
 
 function App() {
   return (
@@ -25,9 +26,25 @@ function App() {
            </div>
          </div>
        </div>
-     </div>
 
-     <div className="row">
+       <div className="row">
+          <div className="col">
+          <Employee/>
+          </div>
+      </div>
+
+      <div className="row">
+      <div className="col">
+        <EmployeeClass/>
+      </div>
+    </div>
+    </div> {/*Container Closing Div */}
+
+
+
+  
+
+   {/* <div className="row">
        <div className="col">
          <Employee/>
 
@@ -45,6 +62,8 @@ function App() {
          <CustomerClass name={'Vanessa'} age={28} title={"Software Engineer"}/>
        </div>
      </div>
+  */}
+
    </React.Fragment>
   );
 }
