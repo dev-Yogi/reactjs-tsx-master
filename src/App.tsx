@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/Counter';
+import Counter from './components/counter';
 import Greetings from './components/Greetings';
+import LoginForm from './components/LoginForm';
 import logo from './logo.svg';
 
 
@@ -18,24 +19,30 @@ function App() {
              <p className='fs-italic'>
                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis suscipit unde perferendis saepe facilis optio necessitatibus. Similique alias, fuga dignissimos molestiae itaque voluptatem vel ut dolor pariatur rerum nam minima?
              </p>
-             <button className='btn btn-success btn-sm'>
-               <i className="fa fa-book"> </i>Read More
-             </button>
+            
            </div>
          </div>
        </div>
 
-       <div className="row">
+     {/* <div className="row">
          <div className="col">
             <Counter/>
          </div>
        </div>
-
+ 
        <div className="row">
          <div className="col">
            <Greetings/>
          </div>
        </div>
+  */}
+
+  <div className="row">
+    <div className="col">
+        <LoginForm/>
+    </div>
+  </div>
+
 
     </div> {/*Container Closing Div */}
    </React.Fragment>
