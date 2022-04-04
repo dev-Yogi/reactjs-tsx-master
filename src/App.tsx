@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Counter from './components/Counter';
+import Greetings from './components/Greetings';
 import logo from './logo.svg';
 
 
@@ -27,6 +28,12 @@ function App() {
        <div className="row">
          <div className="col">
             <Counter/>
+         </div>
+       </div>
+
+       <div className="row">
+         <div className="col">
+           <Greetings/>
          </div>
        </div>
 
