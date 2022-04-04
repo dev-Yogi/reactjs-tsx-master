@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Counter from './components/Counter';
+import logo from './logo.svg';
 
 
 function App() {
@@ -21,6 +21,12 @@ function App() {
                <i className="fa fa-book"> </i>Read More
              </button>
            </div>
+         </div>
+       </div>
+
+       <div className="row">
+         <div className="col">
+            <Counter/>
          </div>
        </div>
 
