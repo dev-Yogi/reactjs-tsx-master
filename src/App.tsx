@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import UserList from './components/UserList';
 
 import logo from './logo.svg';
 
@@ -22,18 +23,11 @@ function App() {
          </div>
        </div>
 
-    {/* <div className="row">
-         <div className="col">
-            <Counter/>
-         </div>
-       </div>
- 
         <div className="row">
-         <div className="col">
-           <Greetings/>
-         </div>
-       </div>
-  */}
+          <div className="col">
+            <UserList/>
+          </div>
+        </div>
 
 
     </div> {/*Container Closing Div */}
