@@ -1,36 +1,27 @@
 import React from 'react';
 import './App.css';
+
 import UserList from './components/UserList';
+import {Routes, Route, Navigate} from 'react-router-dom';
 
 import logo from './logo.svg';
+import UserDetails from './components/UserDetails';
+import About from './components/About';
+import Navbar from './components/Navbar';
+
 
 
 function App() {
   return (
    <React.Fragment>
-     <div className="container mt-3">
-       <div className="gird">
-         <div className="row">
-           <div className="col">
-             <p className="h3 fw-bold text-success">
-               App Component
-             </p>
-             <p className='fs-italic'>
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis suscipit unde perferendis saepe facilis optio necessitatibus. Similique alias, fuga dignissimos molestiae itaque voluptatem vel ut dolor pariatur rerum nam minima?
-             </p>
-            
-           </div>
-         </div>
-       </div>
+     <Navbar/>
+     <Routes>
+       <Route path={'/'} element={<Navigate to={'/contacts/list'}/>}/>
+       <Route path={'/contacts/list'} element={<UserList/>}/>
+       <Route path={'/contacts/:id'} element={<UserDetails/>}/>
+       <Route path={'/about'} element={<About/>}/>
+     </Routes>
 
-        <div className="row">
-          <div className="col">
-            <UserList/>
-          </div>
-        </div>
-
-
-    </div> {/*Container Closing Div */}
    </React.Fragment>
   );
 }

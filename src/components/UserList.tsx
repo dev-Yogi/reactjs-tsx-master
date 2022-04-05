@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { IUser } from "../models/IUser";
 import { UserService } from "../services/UserService";
+import {Link} from 'react-router-dom';
 
 interface IState{
     loading: boolean;
@@ -39,6 +40,15 @@ let UserList:React.FC<IProps> = () => {
     let {loading, users, errorMessage} = state;
     return(
         <React.Fragment>
+            <div className="container mt-3">
+                <div className="row">
+                    <div className="col">
+                        <p className="h3 fw-bold text-success">User List</p>
+                        <p className="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae ut vitae fugiat soluta numquam laboriosam? Odit non in at facere aperiam necessitatibus doloribus dolor illum. Illum repellat hic corrupti.ß</p>
+                    </div>
+                </div>
+            </div>
+
             <div className="container">
                 <div className="row">
                     <div className="col mg-10">
@@ -62,7 +72,7 @@ let UserList:React.FC<IProps> = () => {
                                                 {user.id}
                                             </td>
                                             <td>
-                                                {user.name}
+                                               <Link className="text-decoration-none text-success fw-bold"to={`/contacts/${user.id}`}>{user.name}</Link>
                                             </td>
                                          
                                             <td>
