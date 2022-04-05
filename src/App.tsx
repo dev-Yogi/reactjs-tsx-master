@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/counter';
-import Greetings from './components/Greetings';
-import LoginForm from './components/LoginForm';
+
 import logo from './logo.svg';
 
 
@@ -24,24 +22,18 @@ function App() {
          </div>
        </div>
 
-     {/* <div className="row">
+    {/* <div className="row">
          <div className="col">
             <Counter/>
          </div>
        </div>
  
-       <div className="row">
+        <div className="row">
          <div className="col">
            <Greetings/>
          </div>
        </div>
   */}
-
-  <div className="row">
-    <div className="col">
-        <LoginForm/>
-    </div>
-  </div>
 
 
     </div> {/*Container Closing Div */}
