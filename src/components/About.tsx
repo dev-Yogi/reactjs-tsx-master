@@ -1,6 +1,6 @@
 import React from "react";
 
-interface IState{}
+
 interface IProps{}
 
 let About:React.FC<IProps> = () => {
