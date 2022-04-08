@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 
-interface IState{}
+
 interface IProps{}
 
 let Navbar:React.FC<IProps> = () => {
