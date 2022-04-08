@@ -1,6 +1,5 @@
 import React from "react";
 
-interface IState{}
 interface IProps{}
 
 let PageNotFound:React.FC<IProps> = () => {

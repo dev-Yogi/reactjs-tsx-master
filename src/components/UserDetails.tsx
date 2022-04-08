@@ -43,9 +43,9 @@ let UserDetails:React.FC<IProps> = () => {
             })
         });
         }
-    } , [id]);
+    } , [state, id]);
 
-    let {loading, user, errorMessage} = state;
+    let { user} = state;
     return(
         <React.Fragment>
             <div className="container mt-3">
