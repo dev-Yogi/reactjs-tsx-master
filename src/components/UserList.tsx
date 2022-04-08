@@ -34,10 +34,10 @@ let UserList:React.FC<IProps> = () => {
 
             })
         });
-    } , []);
+    } , [state]);
 
 
-    let {loading, users, errorMessage} = state;
+    let {users} = state;
     return(
         <React.Fragment>
             <div className="container mt-3">
