@@ -4,7 +4,7 @@ import './App.css';
 import UserList from './components/UserList';
 import {Routes, Route, Navigate} from 'react-router-dom';
 
-import logo from './logo.svg';
+
 import UserDetails from './components/UserDetails';
 import About from './components/About';
 import Navbar from './components/Navbar';
